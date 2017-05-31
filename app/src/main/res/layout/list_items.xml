@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="3">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/iv"
+        tools:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/tv1"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            tools:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv1"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv"
+            android:layout_toEndOf="@+id/iv"
+            android:textStyle="bold"/>
+
+        <TextView
+            tools:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv2"
+            android:layout_below="@+id/tv1"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            tools:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv5"
+            android:layout_alignRight="@+id/tv5"
+            android:layout_alignEnd="@+id/tv5"
+            android:id="@+id/tv3" />
+
+        <TextView
+            tools:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv3"
+            android:layout_alignLeft="@+id/tv3"
+            android:layout_alignStart="@+id/tv3"
+            android:id="@+id/tv4" />
+
+        <TextView
+            tools:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv5"
+            android:layout_below="@+id/tv2"
+            android:layout_alignLeft="@+id/tv2"
+            android:layout_alignStart="@+id/tv2" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
